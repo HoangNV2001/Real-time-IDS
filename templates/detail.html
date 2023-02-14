@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="robots" content="noindex, nofollow">
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js"></script> -->
+
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+    <!-- <script src="static/js/application.js"></script> -->
+
+    <link rel="stylesheet" type="text/css" href="static/css/thirdparty.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="static/css/media.css">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <h1>APT Detection System</h1>
+    <p>By NVH</p>
+  </div>
+</div>
+
+<div class="container">
+  <b>
+  <h3 align="center">
+  {{ risk|safe }}
+  </h3>
+  </b>
+</div>
+<hr>
+
+{% if exp %}
+  <!-- <h3 align="center">LIME-explained results using {#{ classifier }#}</h3> -->
+  <h3 align="center">LIME-explained results using Random Forest Classifier (Top-6 values):</h3>
+  <div class="container">
+      {{ exp|safe }}
+  </div>
+{% endif %}
+<hr>
+<br></br>
+
+<h3 align="center">Ranking features by reconstruct error by Auto Encoder:</h3>
+<div class="container">
+  {{ ae_plot|safe }}
+</div>
+<hr>
+<br></br>
+
+<h3 align="center">List of all features and values used:
+<div class="container">
+  <!-- <div class="panel-body table-responsive"> -->
+    <table class="table2 table-bordered" >
+      {% for table in tables %}
+      <tr>
+        <!-- <td>{#{titles[loop.index]}#}</td> -->
+        <td>{{ table|safe }}</td>
+      </tr>
+      {% endfor %}
+
+    </table>
+</div>
+</h3>
+  <!-- </div> -->
+
+</div>
+
+</body>
+
+
+</html>
+

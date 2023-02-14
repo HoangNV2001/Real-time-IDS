@@ -1,0 +1,12 @@
+Flask==2.1.1
+Flask-SocketIO==5.1.1
+simple-websocket==0.5.1
+scapy==2.4.5
+scikit-learn==1.2.0
+joblib==1.2.0
+pandas==1.5.1
+psutil==5.9.4
+lime==0.2.0.1
+dill==0.3.6
+tensorflow==2.11.0
+plotly==5.13.0
