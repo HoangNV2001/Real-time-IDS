@@ -67,6 +67,9 @@ thread_stop_event = Event()
 
 f = open("output_logs.csv", 'w')
 w = csv.writer(f)
+f2 = open("input_logs.csv", 'w')
+w2 = csv.writer(f2)
+ 
 
 cols = ['FlowID',
 'FlowDuration',
@@ -233,8 +236,15 @@ def classify(features):
         print(feature_string + classification + proba_score )
 
     flow_count +=1
-    w.writerow([flow_count]+feature_string + classification+ proba_score)
+    w.writerow(['Flow #'+str(flow_count)] )
+    w.writerow(['Flow info:']+feature_string)
+    w.writerow(['Flow features:']+features)
+    w.writerow(['Prediction:']+classification+ proba_score)
+    w.writerow(['--------------------------------------------------------------------------------------------------'])
 
+    w2.writerow(['Flow #'+str(flow_count)] )
+    w2.writerow(['Flow info:']+features)
+    w2.writerow(['--------------------------------------------------------------------------------------------------'])
     flow_df.loc[len(flow_df)] = [flow_count]+ record + classification + proba_score + risk
 
 
