@@ -1,23 +1,25 @@
-
+![image](https://github.com/HoangNV2001/Real-time-IDS/assets/72451372/e025eb3a-d4f8-4c28-97f5-85cbca87aa98)
 # APT Detection Web App
 <b>Project III</b><br>
 <b>Nguyễn Việt Hoàng - 20194434</b>
+* System descriptive diagram
+![image](https://github.com/HoangNV2001/Real-time-IDS/assets/72451372/78e0b74c-9db6-4bf5-8591-6d7aa8247b22)
 
 <hr>
 
-## Yêu cầu:
-1. Hệ điều hành Windows, phiên bản Windows 10 trở lên.
+## Requirements:
+1. Windows OS.
 
 2. Python 3.9:
     * link 64-bit: https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe 
     * link 32-bit: https://www.python.org/ftp/python/3.9.13/python-3.9.13.exe
 
-     <b> Lưu ý: tick chọn "Add Python 3.9 to PATH" trong quá trình cài đặt.</b>
+     <b> Note: select "Add Python 3.9 to PATH" in installation procedure.</b>
 
 3. Npcap 1.71:
     https://npcap.com/dist/npcap-1.71.exe
 
-## Tải folder project và cài đặt môi trường:
+## Download project folder & environment setups:
 <code>git clone https://github.com/HoangNV2001/APT_Detection
     cd APT_Detection
     # Create a virtual environment
@@ -28,8 +30,15 @@
     python -m pip install -r requirements.txt
     # or: pip install -r requirements.txt</code>
 
-Chạy chương trình:
+Run program:
 
 <code>python application.py</code>
 
-Địa chỉ Web app: http://localhost:5000
+Web app address: [http://localhost:5000] http://localhost:5000
+
+## Demo GUI
+* Main page, overview of real-time captured flows:
+![image](https://github.com/HoangNV2001/Real-time-IDS/assets/72451372/90b42a1a-e2cb-4445-8036-4504e9c7c4ba)
+* Flow detail page:
+![image](https://github.com/HoangNV2001/Real-time-IDS/assets/72451372/c6ce1c6b-a006-461e-8872-d889abd69d0d)
+
