@@ -1,4 +1,3 @@
-![image](https://github.com/HoangNV2001/Real-time-IDS/assets/72451372/e025eb3a-d4f8-4c28-97f5-85cbca87aa98)
 # APT Detection Web App
 <b>Project III</b><br>
 <b>Nguyễn Việt Hoàng - 20194434</b>
