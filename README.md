@@ -35,7 +35,10 @@ Web app address: [http://localhost:5000] http://localhost:5000
 
 ## Demo GUI
 * Main page, overview of real-time captured flows:
+
 ![image](https://github.com/HoangNV2001/Real-time-IDS/assets/72451372/90b42a1a-e2cb-4445-8036-4504e9c7c4ba)
+
 * Flow detail page:
+
 ![image](https://github.com/HoangNV2001/Real-time-IDS/assets/72451372/c6ce1c6b-a006-461e-8872-d889abd69d0d)
 
