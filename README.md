@@ -1,8 +1,11 @@
-![image](https://github.com/HoangNV2001/Real-time-IDS/assets/72451372/f5167cf2-f8ec-403a-bc1e-7e4d4a62f86c)# APT Detection Web App
+# APT Detection Web App
 <b>Project III</b><br>
-<b>Nguyễn Việt Hoàng - 20194434</b>
-<b> Real-time Intrusion Detection System implementing Machine Learning. 
-We combine Supervised learning (RF) for detecting known attacks from CICIDS 2018 & SCVIC-APT datasets, and Unsupervised Learning (AE) for anomaly detection.
+<b>Nguyễn Việt Hoàng - 20194434</b><br>
+## About
+* Real-time Intrusion Detection System implementing Machine Learning. 
+
+* We combine Supervised learning (RF) for detecting known attacks from CICIDS 2018 & SCVIC-APT datasets, and Unsupervised Learning (AE) for anomaly detection.
+
 * System descriptive diagram:
 ![image](https://github.com/HoangNV2001/Real-time-IDS/assets/72451372/78e0b74c-9db6-4bf5-8591-6d7aa8247b22)
 
