@@ -1,7 +1,7 @@
 # APT Detection Web App
 <b>Project III</b><br>
 <b>Nguyễn Việt Hoàng - 20194434</b>
-* System descriptive diagram
+* System descriptive diagram:
 ![image](https://github.com/HoangNV2001/Real-time-IDS/assets/72451372/78e0b74c-9db6-4bf5-8591-6d7aa8247b22)
 
 ## Requirements:
