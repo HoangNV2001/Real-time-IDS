@@ -36,7 +36,7 @@ Run program:
 
 <code>python application.py</code>
 
-Web app address: [http://localhost:5000] http://localhost:5000
+Web app address: [http://localhost:5000](http://localhost:5000)
 
 ## Demo GUI
 * Main page, overview of real-time captured flows:
